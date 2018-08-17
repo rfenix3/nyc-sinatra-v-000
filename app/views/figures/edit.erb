@@ -1,9 +1,9 @@
-<!-- <h3>Edit Landmark</h3> -->
+<!-- <h3>Edit Figure</h3> -->
 
-<form action="/landmarks/<%=@landmark.id%>" method="post">
+<form action="/figures/<%=@figure.id%>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <label> Name: </label>
-  <input type="text" id="landmark_name" name="landmark[name]" value="<%=@alandmark.name%>"></input><br></br>
+  <input type="text" id="figure_name" name="figure[name]" value="<%=@figure.name%>"></input><br></br>
 
   <label><h4>Edit Titles</h4></label>
   <%Title.all.each do |title|%>
